@@ -11,16 +11,20 @@ var updateTime = function()
 
     taskStatus();
 
-}
+};
 
 var taskStatus = function()
 {
     for(var i = 0; i < timeBlock.hour.length; i++)
     {
-        var currHour = parseInt(moment().format("h"));
+        var currHour = parseInt(moment().format("H"));
         var taskHour = parseInt(timeBlock.hour[i]);
 
         var taskId = "#block-" + timeBlock.hour[i];
+        var blockId = taskId + "-description";
+
+        // Update task description if any data is in local memory
+        updateDescription(blockId);
 
         // Task is in the Present
         if(currHour == taskHour)
@@ -38,6 +42,23 @@ var taskStatus = function()
             $(taskId).addClass("future");
         }
     }
-}
+};
+
+var updateDescription = function(blockId)
+{
+    var data = localStorage.getItem(blockId);
+
+    if(data)
+    {
+        document.querySelector(blockId).value = data;
+    }
+};
+
+$(".saveBtn").on("click", function(event){
+    var blockId = "#" + this.parentElement.parentElement.id + "-description";
+    var description = document.querySelector(blockId).value;
+
+    localStorage.setItem(blockId,description);
+});
 
 updateTime();
