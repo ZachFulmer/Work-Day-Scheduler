@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,7 +19,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,10 +30,154 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <!-- Start 9AM Block -->
+      <div class="row" id="block-9">
+        <div class="col-2">
+          <h4 class="hour">9AM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 9AM Block -->
+
+      <!-- Start 10AM Block -->
+      <div class="row" id="block-10">
+        <div class="col-2">
+          <h4 class="hour">10AM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 10AM Block -->
+
+      <!-- Start 11AM Block -->
+      <div class="row" id="block-11">
+        <div class="col-2">
+          <h4 class="hour">11AM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 11AM Block -->
+
+      <!-- Start 12PM Block -->
+      <div class="row" id="block-12">
+        <div class="col-2">
+          <h4 class="hour">12PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 12PM Block -->
+
+      <!-- Start 1PM Block -->
+      <div class="row" id="block-13">
+        <div class="col-2">
+          <h4 class="hour">1PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 1PM Block -->
+
+      <!-- Start 2PM Block -->
+      <div class="row" id="block-14">
+        <div class="col-2">
+          <h4 class="hour">2PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 2PM Block -->
+
+      <!-- Start 3PM Block -->
+      <div class="row" id="block-15">
+        <div class="col-2">
+          <h4 class="hour">3PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 3PM Block -->
+
+      <!-- Start 4PM Block -->
+      <div class="row" id="block-16">
+        <div class="col-2">
+          <h4 class="hour">4PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 4PM Block -->
+
+      <!-- Start 5PM Block -->
+      <div class="row" id="block-17">
+        <div class="col-2">
+          <h4 class="hour">5PM</h4>
+        </div>
+        <div class="col-8">
+          <input type="text" placeholder="Task Description" class="description" ></p>
+        </div>
+        <div class="col-2">
+          <button type="button" class="saveBtn">
+            <span class="oi oi-file"></span>
+          </button>
+        </div>
+      </div>
+      <!-- End 5PM Block -->
       <!-- Timeblocks go here -->
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
